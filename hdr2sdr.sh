@@ -42,7 +42,6 @@ done > $tmp-filelist
 
 # 対象ファイルをHDRからSDRへ変換し、別フォルダにコピー
 cat $tmp-filelist |
-head -n 1 |
 while read file; do
   # 出力ファイル名を生成
   output_file=$output_folder/$(basename $file)
